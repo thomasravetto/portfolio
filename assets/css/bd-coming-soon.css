@@ -71,4 +71,18 @@ p {
     background-color: #000000;
     color: #ffffff; }
 
+#days, #hours, #minutes, #seconds, .label {
+  display: inline;
+}
+
+.timer {
+  position: relative;
+  bottom: 30px;
+}
+
+.github {
+  width: 20px;
+  padding: 1px;
+}
+
 /*# sourceMappingURL=bd-coming-soon.css.map */
