@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Trading Simulator</title>
+    <link href="../style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <div>
+        <div class="nav_bar">
+            <a href="../#homepage" class="nav_bar_link"><h2>Home</h2></a>
+            <a href="../#portfolio" class="nav_bar_link"><h2>Portfolio</h2></a>
+            <a href="../#about_me" class="nav_bar_link"><h2>About Me</h2></a>
+            <a href="../#contact" class="nav_bar_link"><h2>Contact</h2></a>
+        </div>
+        <div class="project">
+            <div class="project_container">
+                <div class="project_header">
+                    <a href="../#portfolio" class="project_go_back">&#10094;</a>
+                    <h1 class="project_title">Candle<span class="red">Trade</span> - Trading Simulator</h1>
+                    <div class="project_empty"></div>
+                </div>
+
+                <!-- Image Slider -->
+                <div class="project_images_slider_container">
+
+                    <div class="project_slider_element">
+                        <img src="../images/projects/trading_sim/Dashboard.png" class="project_slider_image">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                  </div>
+                  <!-- Image Slider -->
+
+                  <div class="project_description">
+                    <h2 class="project_description_header">What is CandleTrade?</h2>
+                    <p>CandleTrade is a Trading Simulator that allows you to trade and analyse Stocks.</p>
+                    <p>You can create an account and save assets in the DashBoard watchlist to keep track of their price or analyse stock prices in the market graph.
+                        It works by communicating with <a href="https://www.alphavantage.co/">Alpha Vantage API</a> and by formatting the data into a graph.</p>
+                    <p>The transactions are stored in a secure PostgreSQL database and allow the user to trade stocks and see the balance price changing (hopefully increasing in value).</p>
+                    <h2 class="project_description_header">Key-features</h2>
+                    <ul class="project_description_features">
+                        <li>User Authentication: Thanks to a PostgreSQL, users can easily register and login on this app, keeping track of transactions, watchlist and portofolio.</li>
+                        <li>OAuth 2.0: If you prefer, you can access this application by using your Google or GitHub account.</li>
+                        <li>Market: The prices of the assets can be seen in real-time in the Market section, data is taken from an API and formatted into graphs, you can easily buy or sell stocks based on the real-time data.</li>
+                        <li>Watchlist: By storing the users favorite assets in the Database, the prices can be easily monitored from the watchlist.</li>
+                        <li>Portfolio: All the assets owned by the user are stored in the portfolio, as well as every transaction that took place.</li>
+                    </ul>
+                    <h2 class="project_description_header">Built with</h2>
+                    <div class="tech_logos">
+                        <a href="https://react.dev/"><i class="devicon-react-original"></i></a>
+                        <a href="https://nodejs.org/en"><i class="devicon-nodejs-plain-wordmark"></i></a>
+                        <a href="https://www.postgresql.org/"> <i class="devicon-postgresql-plain"></i></a>
+                        <a href="https://aws.amazon.com/it/"><i class="devicon-amazonwebservices-plain-wordmark"></i></a>
+                        <a href="https://www.docker.com/"><i class="devicon-docker-plain"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

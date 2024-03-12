@@ -1,51 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thomas Ravetto - Full Stack Developer</title>
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bd-coming-soon.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
 </head>
-
-<body class="min-vh-100 d-flex flex-column">
-
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-dark bg-transparenet">
-                <a class="navbar-brand" href="#">
-                    <h1>Thomas Ravetto</h1>
+<body>
+    <div class="nav_bar">
+        <a href="#homepage" class="nav_bar_link"><h2>Home</h2></a>
+        <a href="#portfolio" class="nav_bar_link"><h2>Portfolio</h2></a>
+        <a href="#about_me" class="nav_bar_link"><h2>About Me</h2></a>
+        <a href="#contact" class="nav_bar_link"><h2>Contact</h2></a>
+    </div>
+    <div id="homepage" class="homepage">
+        <div class="homepage_container">
+            <h1 class="homepage_title"><span class="red">Thomas</span> Ravetto</h1>
+            <p class="homepage_subtitle">I am a <span class="red">Full Stack Developer</span> based in Turin</p>
+        </div>
+    </div>
+    <div id="portfolio" class="timeline_container">
+        <div class="portfolio_title_container">
+            <h1 class="portfolio_title">Port<span class="red">folio</span></h1>
+        </div>
+        <div class="timeline">
+            <div class="timeline_element left">
+                <div class="timeline_date">Feb 2024</div>
+                <a href="portfolio/trading.html" class="timeline_link">
+                    <div class="timeline_content">
+                        <div class="image_container">
+                            <img class="timeline_element_image" src="./images/projects/trading_sim/Dashboard.png">
+                        </div>
+                        <div class="timeline_element_description_container">
+                            <h3>CandleTrade - Trading Simulator</h3>
+                            <p>A trading simulator that allows you to buy and sell stocks.</p>
+                            <p>In the Dashboard users can analyse their portfolio and the assets added to the watchlist.</p>
+                        </div>
+                    </div>
                 </a>
-                <span class="navbar-text d-none d-sm-inline-block">dev.thomasravetto@gmail.com</span>
-            </nav>
-        </div>
-    </header>
-    <main class="my-auto">
-        <div class="container">
-            <h1 class="page-title">Coming soon</h1>
-            <p class="page-description">I'm working on my portfolio website, it will be ready in</p>
-            <div class="timer">
-                <h1 id="days"> </h1>
-                <p class="label">days</p>
-                <h1 id="hours"> </h1>
-                <p class="label">hours</p>
-                <h1 id="minutes"> </h1>
-                <p class="label">minutes</p>
-                <h1 id="seconds"> </h1>
-                <p class="label">seconds</p>
             </div>
-            <p>Stay connected</p>
-            <nav class="footer-social-links">
-                <a href="https://www.linkedin.com/in/thomasravetto1/" class="social-link"><i class="mdi mdi-linkedin"></i></a>
-                <a href="https://github.com/thomasravetto" class="social-link"><img  class="github" src="./assets/images/github-mark/github-mark.png"></img></a>
-            </nav>
+            <div class="timeline_element right">
+                <div class="timeline_date">Dec 2023</div>
+                <a href="portfolio/chat.html" class="timeline_link">
+                    <div class="timeline_content">
+                        <div class="image_container">
+                            <img class="timeline_element_image" src="./images/projects/chat_app/Login.png">
+                        </div>
+                        <div class="timeline_element_description_container">
+                            <h3>FlashChat - Real-Time Chat Application</h3>
+                            <p>A chat application that allows you to create an account, send friend requests to other users and start a chat with them.</p>
+                            <p>The messages are sent in real time thanks to a Socket connection.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="timeline_element left">
+                <div class="timeline_date">Nov 2023</div>
+                <a href="portfolio/nasa.html" class="timeline_link">
+                    <div class="timeline_content">
+                        <div class="image_container">
+                            <img class="timeline_element_image" src="./images/projects/nasa_app/HomeLow.jpg">
+                        </div>
+                        <div class="timeline_element_description_container">
+                            <h3>NASA Project - Zero To Mastery</h3>
+                            <p>This was the final project of a course I completed called Zero To Mastery: Complete Node.js Developer.</p>
+                            <p>It allows users to program future space launches to habitable exoplanets with rockets produced by Space X.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="timeline_element right">
+                <div class="timeline_date">Sep 2023</div>
+                <a href="portfolio/face.html" class="timeline_link">
+                    <div class="timeline_content">
+                        <div class="image_container">
+                            <img class="timeline_element_image" src="./images/projects/face_recognition/ScannedLow.jpg">
+                        </div>
+                        <div class="timeline_element_description_container">
+                            <h3>Smart Brain - Zero To Mastery</h3>
+                            <p>This was the final project of a course I completed called Zero To Mastery: Complete Web Developer.</p>
+                            <p>It allows users to upload a photo and uses an API to recognize the faces in it.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="timeline_element left">
+                <div class="timeline_date">Gen 2023</div>
+                <a href="portfolio/budget.html" class="timeline_link">
+                    <div class="timeline_content">
+                        <div class="image_container">
+                            <img class="timeline_element_image" src="./images/projects/budget_app/DashboardLow.jpg">
+                        </div>
+                        <div class="timeline_element_description_container">
+                            <h3>Budget-It - Budgeting Application</h3>
+                            <p>Allow users to create an account and keep track of all their expenses.</p>
+                            <p>Users can put money into a savings account and create new targets.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="timeline_element right">
+                <div class="timeline_date">Oct 2022</div>
+                <a href="portfolio/youtify.html" class="timeline_link">
+                    <div class="timeline_content">
+                        <div class="image_container">
+                            <img class="timeline_element_image" src="./images/projects/youtify/DashboardLow.jpg">
+                        </div>
+                        <div class="timeline_element_description_container">
+                            <h3>Youtify - Youtube to Spotify Playlist Converter</h3>
+                            <p>This was the final project of the Harvard's CS50 Course that I have taken.</p>
+                            <p>It allows users to convert youtube playlist into spotify playlists.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-    </main>
+    </div>
+    <div id="about_me" class="about_me">
+        <div class="about_me_container">
+            <img class="about_me_image" src="./images/about_me_image.png">
+            <div class="about_me_content">
+                <h1 class="about_me_title">About <span class="red">Me</span></h1>
+                <div class="about_me_text">
+                    <p>Hi! My name is Thomas, and I am a passionate Full-Stack Developer from Italy.</p>
+                    <p>Since I was a kid, I have had a love for technology that pushes me to explore and experiment. In the last few years,
+                        I decided to deep-dive into the field of Web Development, particularly Back-End Development, where I am experimenting with new technologies
+                        to better enhance my skills. As a self-taught Developer, I am currently working on various personal projects and seeking a role
+                        where I can continue expanding my knowledge in this field.</p>
+                    <p>If you scrolled this far, you have hopefully already seen my portfolio. In case you didn't, <a href="#portfolio">here it is.</a></p>
+                </div>
+                <a href="./files/Full_Stack_Developer_NOCELL.pdf" target="_blank" class="about_me_download"><p>DOWNLOAD CV</p></a>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <h1 class="contact_title">Contact <span class="red">Me</span></h1>
+        <!-- <form class="contact_form">
+            <input type="text" id="name" placeholder="Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="subject" placeholder="Subject">
+            <textarea id="message" placeholder="Message"></textarea>
+            <button type="submit" class="contact_button">SEND</button>
+        </form> -->
+        <div class="contact_links_container">
+            <div class="contact_link">
+                <h3>EMAIL</h3>
+                <a href="mailto:dev.thomasravetto@gmail.com">dev.thomasravetto@gmail.com</a>
+            </div>
+            <div class="contact_link">
+                <h3>CONTACT NUMBER</h3>
+                <a href="tel:+393348190557">+39 3348190557</a>
+            </div>
+            <div class="social_container">
+                <h3 class="social_title">SOCIAL</h3>
+                <div class="social_links_container">
+                    <a href="https://www.linkedin.com/in/thomasravetto1/" class="social_link">
+                        <i class="devicon-linkedin-plain"></i>
+                    </a>
+                    <a href="https://github.com/thomasravetto" class="social_link">
+                        <i class="devicon-github-original"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
+<hr style="background-color: gray; height: 1px; border: none;">
+<footer class="footer">
+    <div class="footer_links_container">
+        <h3>Navigate</h3>
+        <a href="#homepage" class="footer_link">Home</a>
+        <a href="#portfolio" class="footer_link">Portfolio</a>
+        <a href="#about_me" class="footer_link">About Me</a>
+        <a href="#contact" class="footer_link">Contact</a>
+    </div>
+    <div class="connect_container">
+        <h3>Connect</h3>
+        <a href="https://www.linkedin.com/in/thomasravetto1/">LinkedIn</a>
+        <a href="https://github.com/thomasravetto">GitHub</a>
+    </div>
+</footer>
 </html>

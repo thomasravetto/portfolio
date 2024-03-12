@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Chat Application</title>
+    <link href="../style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <div>
+        <div class="nav_bar">
+            <a href="../#homepage" class="nav_bar_link"><h2>Home</h2></a>
+            <a href="../#portfolio" class="nav_bar_link"><h2>Portfolio</h2></a>
+            <a href="../#about_me" class="nav_bar_link"><h2>About Me</h2></a>
+            <a href="../#contact" class="nav_bar_link"><h2>Contact</h2></a>
+        </div>
+        <div class="project">
+            <div class="project_container">
+
+                <div class="project_header">
+                    <a href="../#portfolio" class="project_go_back">&#10094;</a>
+                    <h1 class="project_title">Flash<span class="red">Chat</span> - Real-Time Chat Application</h1>
+                    <div class="project_empty"></div>
+                </div>
+
+                <!-- Image Slider -->
+                <div class="project_images_slider_container">
+
+                    <div class="project_slider_element">
+                        <img src="../images/projects/chat_app/Login.png" class="project_slider_image">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                  </div>
+                  <!-- Image Slider -->
+
+                  <div class="project_description">
+                    <h2 class="project_description_header">What is FlashChat?</h2>
+                    <p>FlashChat is a web application that allows you to chat in real-time with your friends all over the world.</p>
+                    <p>All you need to do is create an account, send a friend request and (if it gets accepted) create a new chat.</p>
+                    <h2 class="project_description_header">Key-features</h2>
+                    <ul class="project_description_features">
+                        <li>User Authentication: Thanks to a PostgreSQL, users can easily register and login on this app, keeping track of their conversations!</li>
+                        <li>OAuth 2.0: If you prefer, you can access this application by using your Google account.</li>
+                        <li>Friend Requests: If you want to chat with a friend, all you have to do is to search for its name and send a friend request. Your friend will now have the power to choose to accept it or to refuse it.</li>
+                        <li>Chatting: New chats can be created with your new friends.</li>
+                        <li>Real-Time Messaging: By using a Socket, the messages are sent and received in real-time.</li>
+                    </ul>
+                    <h2 class="project_description_header">Built with</h2>
+                    <div class="tech_logos">
+                        <a href="https://react.dev/"><i class="devicon-react-original"></i></a>
+                        <a href="https://nodejs.org/en"><i class="devicon-nodejs-plain-wordmark"></i></a>
+                        <a href="https://www.postgresql.org/"> <i class="devicon-postgresql-plain"></i></a>
+                        <a href="https://aws.amazon.com/it/"><i class="devicon-amazonwebservices-plain-wordmark"></i></a>
+                        <a href="https://www.docker.com/"><i class="devicon-docker-plain"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

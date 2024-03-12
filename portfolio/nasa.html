@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - NASA Project</title>
+    <link href="../style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <div>
+        <div class="nav_bar">
+            <a href="../#homepage" class="nav_bar_link"><h2>Home</h2></a>
+            <a href="../#portfolio" class="nav_bar_link"><h2>Portfolio</h2></a>
+            <a href="../#about_me" class="nav_bar_link"><h2>About Me</h2></a>
+            <a href="../#contact" class="nav_bar_link"><h2>Contact</h2></a>
+        </div>
+        <div class="project">
+            <div class="project_container">
+                <div class="project_header">
+                    <a href="../#portfolio" class="project_go_back">&#10094;</a>
+                    <h1 class="project_title"><span class="red">NASA</span> Project - Zero To Mastery</h1>
+                    <div class="project_empty"></div>
+                </div>
+
+                <!-- Image Slider -->
+                <div class="project_images_slider_container">
+
+                    <div class="project_slider_element">
+                        <img src="../images/projects/nasa_app/Home.png" class="project_slider_image">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                  </div>
+                  <!-- Image Slider -->
+
+                  <div class="project_description">
+                    <h2 class="project_description_header">What is NASA Project?</h2>
+                    <p>NASA Project is the final project of a course I have completed called <a href="https://zerotomastery.io/courses/learn-node-js/">Zero To Mastery: Complete Node.js Developer.</a></p>
+                    <p>This was a Back-End project build with Node.js, it features a mission-planning system to send Rockets built by Space X on habitable exoplanets.
+                        The data for the planets was taken from the NASA website.</p>
+                    <h2 class="project_description_header">Key-features</h2>
+                    <ul class="project_description_features">
+                        <li>Habitable Planets Data: The data for the planets was parsed from a NASA's CSV file on exoplanets. By filtering the data based on some factors (temperature, distance from its star, orbital period), the resulting planets are chosen as destination for the missions!</li>
+                        <li>Rockets Data: The data for the available rockets for the missions are taken from a Space X API.</li>
+                        <li>Mongo DB: All the upcoming and past missions are saved in a MongoDB instance.</li>
+                    </ul>
+                    <h2 class="project_description_header">Built with</h2>
+                    <div class="tech_logos">
+                        <a href="https://react.dev/"><i class="devicon-react-original"></i></a>
+                        <a href="https://nodejs.org/en"><i class="devicon-nodejs-plain-wordmark"></i></a>
+                        <a href="https://www.mongodb.com/it-it"><i class="devicon-mongodb-plain-wordmark"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
