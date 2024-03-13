@@ -1,3 +1,15 @@
+document.addEventListener('DOMContentLoaded', function() {
+  var menuToggle = document.getElementById('menu-toggle');
+  var menuLinks = document.querySelectorAll('a.hamburger_menu_link');
+
+  menuLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+          menuToggle.checked = false; // Close the menu when a link is clicked
+      });
+  });
+});
+
+
 /**Slideshow images functions */
 
 let slideIndex = 1;
