@@ -876,4 +876,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#950101",endCo
     position: relative;
     bottom: 50px;
   }
+
+  .tech_logos {
+    margin: 0;
+  }
 }
