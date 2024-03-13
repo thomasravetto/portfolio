@@ -880,4 +880,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#950101",endCo
   .tech_logos {
     margin: 0;
   }
+
+  .homepage_title,.homepage_subtitle {
+    margin-left: 30px;
+  }
 }
