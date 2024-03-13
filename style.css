@@ -678,6 +678,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#950101",endCo
 
 @media (max-width: 1150px) {
 
+  .hamburger_menu {
+    display: none;
+  }
+  
+
   .timeline::after {
     left: 90px;
   }
